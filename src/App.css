@@ -1,0 +1,171 @@
+#landing_section {
+  display: flex;
+  gap: 1.042vw;
+  padding: 2rem;
+  justify-content: center;
+}
+
+#text_container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: space-between;
+}
+
+#card_container {
+  width: 60%;
+}
+
+#text_container img {
+  max-width: 51.7rem;
+  max-height: 14.5rem;
+  width: 60%;
+}
+
+#text_heading {
+  font-size: var(--font-size-heading);
+  padding-bottom: 1.042vw;
+}
+
+#text_lebal {
+  font-size: var(--font-size-body);
+}
+
+#contactSection {
+  display: flex;
+  gap: 1.042vw;
+  padding-top: 1.042vw;
+}
+#contactSection input {
+  width: 60%;
+  padding: 0.521vw;
+  border: 1px solid #ababab;
+  border-radius: 0.313vw;
+  font-size: var(--font-size-body);
+  font-family: "Exo 2", sans-serif;
+  outline: none;
+}
+#contactSection button {
+  width: 38%;
+  font-size: var(--font-size-body);
+  color: #ffffff;
+  text-align: center;
+  background: #ea7b2c 0% 0% no-repeat padding-box;
+  border: 1px solid #ea7b2c;
+  border-radius: 0.313vw;
+  opacity: 1;
+}
+#card_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 0.521vw;
+}
+#contactSectionMinScreen {
+  display: none;
+}
+.blur {
+  filter: blur(1px);
+  pointer-events: none;
+}
+.status {
+  font-size: var(--font-size-body);
+  color: #ea7b2c;
+  padding-top: 0.5rem;
+  padding-bottom: 0;
+  line-height: 0;
+}
+
+@media (max-width: 481px) {
+  #text_container {
+    display: flex;
+    justify-content: center;
+  }
+  #text_container img {
+    max-width: 22.2rem;
+    max-height: 6.6rem;
+    margin: 0 auto;
+  }
+  #landing_section {
+    flex-direction: column;
+  }
+  #text_container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #text_heading {
+    max-width: 28rem;
+    max-height: 7.6rem;
+    margin: 0 auto;
+    font-size: 6.667vw;
+    padding: 2rem 0;
+  }
+  #text_lebal {
+    max-width: 35rem;
+    max-height: 17.4rem;
+    font-size: 5vw;
+    text-align: center;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+  }
+  #card_container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #contactSection {
+    display: none;
+  }
+  #contactSectionMinScreen {
+    display: flex;
+    flex-direction: column;
+  }
+  #contactSectionMinScreen input {
+    width: 93%;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid #ababab;
+    border-radius: 6px;
+    font-size: 5vw;
+    font-family: "Exo 2", sans-serif;
+    outline: none;
+  }
+  #contactSectionMinScreen button {
+    max-width: 21.3rem;
+    max-height: 4.9rem;
+    width: 80%;
+    font-size: 5vw;
+    color: #ffffff;
+    text-align: center;
+    background: #ea7b2c 0% 0% no-repeat padding-box;
+    border: 1px solid #ea7b2c;
+    border-radius: 6px;
+    opacity: 1;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 1rem 0;
+  }
+  .status {
+    font-size: 5vw;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 391px) {
+  #text_heading {
+    font-size: var(--font-size-heading-mobile);
+    text-align: center;
+  }
+  #text_lebal {
+    font-size: var(--font-size-body-mobile);
+    max-width: 35rem;
+    max-height: 17.4rem;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+  }
+  #contactSectionMinScreen input {
+    width: 90%;
+    margin: auto;
+  }
+}
